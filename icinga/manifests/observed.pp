@@ -14,7 +14,7 @@ class icinga::observed {
        ensure => present,
        alias => $hostname,
        address => $ipaddress,
-       use => "linux-server",
+       use => "generic-host",
        require => Class['icinga::packages']
   }
 
